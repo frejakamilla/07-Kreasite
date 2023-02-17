@@ -20,12 +20,17 @@
 .form-felt input {
   display: block;
 }
+
+.form-felt label {
+  font-weight: 600;
+}
 .form-felt input {
   width: 100%;
   padding: 0.3rem;
   background-color: #efefef;
   border: none;
   border-radius: 0.3rem;
+  font-weight: 400;
 }
 .send-knap {
   margin: 1.5rem 0 0.3rem 0.5rem;
