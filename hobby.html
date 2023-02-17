@@ -9,7 +9,43 @@
   </head>
   <body class="hobby">
     <header></header>
-    <main></main>
+    <main>
+      <form class="send-liste">
+        <div class="form-control-container">
+          <h3>Vælg de redskaber du mangler</h3>
+          <div class="form-control">
+            <input type="checkbox" id="redskab1" name="redskaber" value="redskab1" />
+            <label for="redskab1">Dette er redskab1</label>
+          </div>
+          <div class="form-control">
+            <input type="checkbox" id="redskab2" name="redskaber" value="redskab2" />
+            <label for="redskab2">Dette er redskab2</label>
+          </div>
+          <div class="form-control">
+            <input type="checkbox" id="redskab3" name="redskaber" value="redskab3" />
+            <label for="redskab3">Dette er redskab3</label>
+          </div>
+        </div>
+        <div class="email-input">
+          <h3>Skriv din mailadresse her</h3>
+          <div class="form-felt">
+            <label
+              >Navn
+              <input placeholder="fx Sonja Solvej" type="text" name="navn" required />
+            </label>
+          </div>
+
+          <div class="form-felt">
+            <label
+              >E-mail
+              <input placeholder="fx sonja@gmail.dk" type="text" name="email" required />
+            </label>
+          </div>
+          <!-- create element i js, få hjælp senere-->
+          <div class="send-knap"><input type="submit" value="Send listen" /></div>
+        </div>
+      </form>
+    </main>
     <footer></footer>
     <script src="JS/fetch.js"></script>
   </body>
