@@ -1,0 +1,78 @@
+/* Farver */
+html {
+  --mørkeblå: #5d718a;
+  --grøn: #95aa99;
+  --gul: #e1a55d;
+  --lyserød: #e6c5be;
+  --orange: #cf7042;
+  --lyseblå: #b4bfc5;
+  --nav_lyserød: #f3e2df;
+}
+/* Fonte */
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonte/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonte/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand-medium";
+  src: url("../fonte/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "Quicksand-regular";
+  src: url("../fonte/Quicksand-Regular.ttf");
+}
+/*Category*/
+.kategoriliste {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+.kategoriliste a {
+  text-decoration: none;
+  padding: 2em;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  /* background-color: var(--mørkeblå); */
+  font-family: "Bebas";
+  font-size: 40px;
+}
+.kategoriliste a:nth-child(1) {
+  background-color: var(--mørkeblå);
+}
+.kategoriliste a:nth-child(2) {
+  background-color: var(--grøn);
+}
+.kategoriliste a:nth-child(3) {
+  background-color: var(--gul);
+}
+.kategoriliste a:nth-child(4) {
+  background-color: var(--lyserød);
+}
+.kategoriliste a:nth-child(5) {
+  background-color: var(--orange);
+}
+.kategoriliste a:nth-child(6) {
+  background-color: var(--lyseblå);
+}
+.kategoriliste a:nth-child(7) {
+  background-color: var(--grøn);
+}
+@media only screen and (max-width: 768px) {
+  .kategoriliste {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .kategoriliste {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
