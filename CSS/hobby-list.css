@@ -4,9 +4,38 @@
   padding: 0;
 }
 /* ––––––––––––––––––––––––––– hobby-list.html ––––––––––––––––––––––––––– */
+
+/* ––––––––– Brødkrummesti ––––––––- */
+.breadcrumb {
+  display: flex;
+  margin-left: 55px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #707070;
+}
+.breadcrumb p {
+  margin: 10px 10px 10px 0;
+  font-family: quicksand;
+  font-size: 40px;
+  color: #707070;
+}
+
+.kategori-html {
+  font-weight: 300;
+}
+
+.hobby-kategori {
+  font-weight: 500;
+}
+
+/* ––––––––– Hobby Cards ––––––––- */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(430px, 430px));
+  gap: 30px;
+  margin: 0 55px;
 }
 .hobby-card {
   width: 430px;
