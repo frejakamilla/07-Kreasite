@@ -36,6 +36,7 @@ console.log("produktliste.js");
 const urlParams = new URLSearchParams(window.location.search);
 const kat = urlParams.get("kat");
 
+document.querySelector(".breadcrumb hobby-kategori").textContent = kat;
 document.querySelector(".hobby-card h4").textContent = kat;
 
 function visHobby(hobby) {
