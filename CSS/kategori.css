@@ -42,3 +42,17 @@ html {
   font-family: "Bebas";
   font-size: 40px;
 }
+
+@media only screen and (max-width: 768px) {
+  .kategoriliste {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .kategoriliste {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
