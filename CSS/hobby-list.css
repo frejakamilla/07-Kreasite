@@ -16,6 +16,11 @@
   flex-direction: column;
 }
 
+.hobby-card a {
+  text-decoration: none;
+  align-self: center;
+}
+
 .hobby-card h2,
 .hobby-card h3,
 .hobby-card h4 {
@@ -24,7 +29,6 @@
 }
 
 .hobby-card h2 {
-  align-self: center;
   font-size: 55px;
   font-weight: 500;
   margin: 22px 0 4px;
