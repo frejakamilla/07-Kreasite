@@ -1,0 +1,52 @@
+/* Farver */
+html {
+  --mørkeblå: #5d718a;
+  --grøn: #95aa99;
+  --gul: #e1a55d;
+  --lyserøde: #e6c5be;
+  --orange: #cf7042;
+  --lyseblå: #b4bfc5;
+  --nav_lyserød: #f3e2df;
+}
+/* Fonte */
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonte/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonte/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand-medium";
+  src: url("../fonte/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "Quicksand-regular";
+  src: url("../fonte/Quicksand-Regular.ttf");
+}
+/*Category*/
+.kategoriliste {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+}
+
+.kategoriliste a {
+  text-decoration: none;
+  padding: 2em;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  background-color: var(--mørkeblå);
+  font-family: "Bebas";
+  font-size: 40px;
+}
+
+@media screen and (min-width: 410px) {
+  .kategoriliste {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+  }
+}
