@@ -1,0 +1,54 @@
+/* Dette dokument skal kobles med style.css */
+
+/* ––––––––––––––––––––––––––– hobby-list.html ––––––––––––––––––––––––––– */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(430px, 1fr));
+  gap: 56px;
+}
+.hobby-card {
+  width: 430px;
+  height: 600px;
+  border: solid #f3e2df 1px;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby-card h2,
+.hobby-card h3,
+.hobby-card h4 {
+  color: #707070;
+  font-family: Quicksand;
+}
+
+.hobby-card h2 {
+  align-self: center;
+  font-size: 55px;
+  font-weight: 500;
+  margin: 22px 0 4px;
+}
+
+.hobby-card img {
+  align-self: center;
+  aspect-ratio: 380/425;
+  width: 380px;
+}
+
+.kategori-flex {
+  display: flex;
+}
+
+.hobby-card h3 {
+  margin: 16px 0 0 25px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hobby-card h4 {
+  font-size: 55px;
+  margin: 16px 0 0 15px;
+  font-size: 40px;
+  font-weight: 400;
+}
