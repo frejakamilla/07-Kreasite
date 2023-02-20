@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
-    <!-- skal slettes når de kobles -->
+    <!-- skal slettes når de kobles css-dokumemter -->
     <link rel="stylesheet" href="CSS/hobby-list.css" />
     <title>Hobby liste</title>
   </head>
@@ -14,31 +14,18 @@
     <main>
       <div class="breadcrumb"></div>
       <div class="card-grid">
-        <!-- <template class="hobby-card-template"> -->
-        <article class="hobby-card">
-          <h2></h2>
-          <img src="#" alt="Illustration" />
-          <h3></h3>
-        </article>
-        <!-- </template> -->
-        <article class="hobby-card">
-          <h2>Strik</h2>
-          <img src="assets/strik.svg" alt="Illustration" />
-          <div class="kategori-flex">
-            <h3>Kategori:</h3>
-            <h4>Stof</h4>
-          </div>
-        </article>
-        <article class="hobby-card">
-          <h2></h2>
-          <img src="#" alt="Illustration" />
-          <h3></h3>
-        </article>
-        <article class="hobby-card">
-          <h2></h2>
-          <img src="#" alt="Illustration" />
-          <h3></h3>
-        </article>
+        <template class="hobby-card-template">
+          <article class="hobby-card">
+            <h2>Strik</h2>
+            <a href="">
+              <img src="#" alt="Illustration" />
+            </a>
+            <div class="kategori-flex">
+              <h3>Kategori:</h3>
+              <h4></h4>
+            </div>
+          </article>
+        </template>
       </div>
     </main>
     <footer></footer>
