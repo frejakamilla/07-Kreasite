@@ -5,45 +5,98 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <link rel="stylesheet" href="CSS/grid_hobby.css" />
     <title>Hobby</title>
   </head>
   <body class="hobby">
     <header></header>
     <main>
-      <form class="send-liste" name="send-liste" netlify>
-        <div class="form-control-container">
-          <h3>Vælg de redskaber du mangler</h3>
-          <div class="form-control">
-            <input type="checkbox" id="#" name="redskaber" value="#" />
-            <label for="#">Dette er redskab nr#</label>
+      <nav class="nav_link">
+        <a href="kategori.html">Kategori/</a>
+        <a href="#">Garn</a>
+        <a href="#">/Strik</a>
+      </nav>
+      <div class="grid_1-1">
+        <img src="assets/strik.svg" alt="" class="img" />
+        <div class="text">
+          <h2>Strik</h2>
+          <p>
+            Ved strikning lænkes garnet med strikkepinde, så man feks. kan
+            fremstille tøj og tæpper. Men kun fantasien sætter grænser for hvad
+            du kan kreere når du først er kommet i gang med strikkeritet
+          </p>
+        </div>
+      </div>
+      <div class="grid-form">
+        <form class="send-liste" name="send-liste" netlify>
+          <div class="form-control-container">
+            <h3>Vælg de redskaber du mangler:</h3>
+            <div class="form-control">
+              <input type="checkbox" id="#" name="redskaber" value="#" />
+              <label for="#">Dette er redskab nr#</label>
+            </div>
+            <div class="form-control">
+              <input
+                type="checkbox"
+                id="redskab2"
+                name="redskaber"
+                value="redskab2"
+              />
+              <label for="redskab2">Dette er redskab2</label>
+            </div>
+            <div class="form-control">
+              <input
+                type="checkbox"
+                id="redskab3"
+                name="redskaber"
+                value="redskab3"
+              />
+              <label for="redskab3">Dette er redskab3</label>
+            </div>
           </div>
-          <div class="form-control">
-            <input type="checkbox" id="redskab2" name="redskaber" value="redskab2" />
-            <label for="redskab2">Dette er redskab2</label>
+          <div class="email-input">
+            <div class="form-felt">
+              <label
+                >Navn*
+                <input
+                  placeholder="fx Sonja Solvej"
+                  type="text"
+                  name="navn"
+                  required
+                />
+              </label>
+            </div>
+            <div class="form-felt">
+              <label
+                >E-mail*
+                <input
+                  placeholder="fx sonja@gmail.dk"
+                  type="text"
+                  name="email"
+                  required
+                />
+              </label>
+            </div>
+            <div class="send-knap">
+              <input type="submit" value="Send listen" />
+            </div>
           </div>
-          <div class="form-control">
-            <input type="checkbox" id="redskab3" name="redskaber" value="redskab3" />
-            <label for="redskab3">Dette er redskab3</label>
+        </form>
+      </div>
+      <div class="box_container">
+        <h3>Opdag andre hobbyer</h3>
+        <div class="grid_boxe">
+          <div class="box_1">
+            <p>Hobby</p>
+          </div>
+          <div class="box_2">
+            <p>Hobby</p>
+          </div>
+          <div class="box_3">
+            <p>Hobby</p>
           </div>
         </div>
-        <div class="email-input">
-          <div class="form-felt">
-            <label
-              >Navn*
-              <input placeholder="fx Sonja Solvej" type="text" name="navn" required />
-            </label>
-          </div>
-
-          <div class="form-felt">
-            <label
-              >E-mail*
-              <input placeholder="fx sonja@gmail.dk" type="text" name="email" required />
-            </label>
-          </div>
-          <!-- create element i js, få hjælp senere-->
-          <div class="send-knap"><input type="submit" value="Send listen" /></div>
-        </div>
-      </form>
+      </div>
     </main>
     <footer></footer>
     <script src="JS/fetch.js"></script>
