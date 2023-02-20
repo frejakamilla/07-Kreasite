@@ -20,6 +20,9 @@ hentData();
 // visdata
 function visData(jsonFilData) {
   jsonFilData.forEach((hobby) => {
-    console.log(hobby);
+    // console.log(hobby);
+    if (hobby.kategori.includes("Stof")) {
+      console.log(hobby);
+    }
   });
 }
