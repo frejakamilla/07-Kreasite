@@ -31,7 +31,6 @@ html {
   grid-template-columns: repeat(3, 1fr);
   gap: 1em;
 }
-
 .kategoriliste a {
   text-decoration: none;
   padding: 2em;
@@ -42,11 +41,4 @@ html {
   background-color: var(--mørkeblå);
   font-family: "Bebas";
   font-size: 40px;
-}
-
-@media screen and (min-width: 410px) {
-  .kategoriliste {
-    grid-template-columns: 1fr;
-    grid-template-rows: auto;
-  }
 }
