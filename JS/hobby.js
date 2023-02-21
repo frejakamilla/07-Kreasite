@@ -1,60 +1,28 @@
-console.log("hobby.js");
-
+console.log("singelview.js");
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
-
-// Variabler
-const url = `https://kreahobby-0fd9.restdb.io/rest/kreahobby`;
-
+const url = `https://kreahobby-0fd9.restdb.io/rest/kreahobby/${id}`;
 // Det hemmelige kodeord
 const options = {
   headers: {
-    "x-apikey": "63ecb0af478852088da682ed",
+    "x-apikey": `63ecb0af478852088da682ed`,
   },
 };
 
+// fetch - Hente data
 async function hentData() {
-  const resspons = await fetch(url, options);
-  const json = await resspons.json();
+  const resultat = await fetch(url, options);
+  const json = await resultat.json();
   vis(json);
-}
-
-function vis(json) {
-  console.log(json);
-  json.forEach((hobby) => {
-    querySelector(".billedeurl").src = "assets/" + hobby.billede;
-    querySelector(".text h2").textContent = hobby.navn;
-    querySelector(".text p").textContent = hobby.beskrivelse;
-  });
 }
 
 hentData();
 
-// hentData();
-// // Hent data
-// async function hentData() {
-//   const resultat = await fetch(url, options);
-//   const json = await resultat.json();
-//   console.log(data);
-//   visData(json);
-// }
-// const main = document.querySelector("main");
-
-// // visdata
-// function visData(jsonFilData) {
-//   jsonFilData.forEach((hobby) => {
-//     // console.log(hobby);
-//     if (hobby.kategori.includes("Stof")) {
-//       console.log(hobby);
-//     }
-//   });
-
-//   const klone = main.cloneNode(true);
-//   klone.querySelector(".form-control").innerHTML = redskaber.redskaber;
-
-//   // document.querySelector(
-//   //   ".img_container img"
-//   // ).src = `https://kreahobby-0fd9.restdb.io/rest/kreahobby/billede/${id}`;
-//   document.querySelector(".text h2").textContent = jsonFilData.navn;
-//   document.querySelector(".text p").textContent = jsonFilData.beskrivelse;
-// }
+// visdata
+function vis(hobby) {
+  console.log(hobby.redskaber);
+  document.querySelector(".billedeurl img").src = "assets/" + hobby.billede;
+  document.querySelector(".text h2").textContent = hobby.navn;
+  document.querySelector(".text p").textContent = hobby.beskrivelse;
+  document.querySelector("#form-container").innerHTML = hobby.redskaber;
+}
