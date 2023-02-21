@@ -1,0 +1,108 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer {
+  background-color: #f3e2df;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 18px;
+}
+
+.h2_footer {
+  font-size: 18px;
+  margin-top: 40px;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-family: "Quicksand-medium";
+  text-align: center;
+  color: #6e6a6e;
+}
+
+form {
+  padding: 4px;
+  border-radius: 5px;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-size: 12px;
+}
+
+label,
+input,
+textarea,
+select,
+.button_footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  font-family: "Quicksand";
+}
+
+input {
+  background-color: #ffff;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: #ffff;
+}
+
+button {
+  background-color: #e5cec9;
+  font-family: "OpenSans";
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 27px;
+  font-size: 12px;
+  border-style: solid;
+  border-color: #e5cec9;
+  color: rgb(0, 0, 0);
+}
+
+.footer_logo {
+  width: 15%;
+  margin-top: 40px;
+  margin-right: 60px;
+}
+
+.icons_footer {
+  width: 38%;
+  margin-top: 90px;
+  margin-left: 60px;
+  /* margin-bottom: 90px; */
+}
+
+/* Fonte */
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonte/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonte/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand-medium";
+  src: url("../fonte/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "Quicksand-regular";
+  src: url("../fonte/Quicksand-Regular.ttf");
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer_logo {
+    margin-left: 84px;
+    width: 98px;
+  }
+
+  .h2_footer {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+}
