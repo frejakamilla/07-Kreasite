@@ -19,13 +19,13 @@
   font-family: Quicksand;
   font-weight: 600;
   font-size: 25px;
-  color: black;
+  color: #707070;
 }
 .nav-link {
   font-family: Quicksand;
   font-weight: 500;
   font-size: 25px;
-  color: black;
+  color: #707070;
   text-decoration: none;
   margin: 30px;
   display: block;
@@ -86,7 +86,7 @@
   font-family: Quicksand;
   font-weight: 400;
   font-size: 20px;
-  color: black;
+  color: #707070;
   text-decoration: none;
 }
 .dropdown-link:hover {
