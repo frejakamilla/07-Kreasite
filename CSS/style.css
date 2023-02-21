@@ -36,6 +36,10 @@ a:link a:hover {
 }
 /* –––––––––––––––––––––––– Tekst og billede beskrivelse under hobby –––––––––––––––––––––––– */
 /* –––––––––––––––––––––––– Billede –––––––––––––––––––––––– */
+.img_container {
+  width: 930px;
+  height: 650px;
+}
 .img {
   max-width: 100%;
   place-items: center;
