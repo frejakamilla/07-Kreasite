@@ -3,11 +3,12 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+/* –––––––––––––––––––––––––––––- footer ––––––––––––––––––––––––––– */
 .footer {
   background-color: #f3e2df;
   display: flex;
   justify-content: space-between;
+  margin: 18px 0 0 0;
   padding-bottom: 18px;
 }
 
