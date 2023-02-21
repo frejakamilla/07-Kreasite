@@ -1,0 +1,89 @@
+/* Dette dokument skal kobles med style.css */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ––––––––––––––––––––––––––– hobby-list.html ––––––––––––––––––––––––––– */
+
+/* ––––––––– Brødkrummesti ––––––––- */
+.breadcrumb {
+  display: flex;
+  margin-left: 55px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: #707070;
+}
+.breadcrumb p {
+  margin: 10px 10px 10px 0;
+  font-family: quicksand;
+  font-size: 40px;
+  color: #707070;
+}
+
+.kategori-html {
+  font-weight: 300;
+}
+
+.hobby-kategori {
+  font-weight: 500;
+}
+
+/* ––––––––– Hobby Cards ––––––––- */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(430px, 430px));
+  gap: 30px;
+  margin: 0 55px;
+}
+.hobby-card {
+  width: 430px;
+  height: 600px;
+  border: solid #f3e2df 1px;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby-card a {
+  text-decoration: none;
+  align-self: center;
+}
+
+.hobby-card h2,
+.hobby-card h3,
+.hobby-card h4 {
+  color: #707070;
+  font-family: Quicksand;
+}
+
+.hobby-card h2 {
+  font-size: 55px;
+  font-weight: 500;
+  margin: 22px 0 4px;
+}
+
+.hobby-card img {
+  align-self: center;
+  aspect-ratio: 380/425;
+  width: 380px;
+}
+
+.kategori-flex {
+  display: flex;
+}
+
+.hobby-card h3 {
+  margin: 16px 0 0 25px;
+  font-size: 40px;
+  font-weight: 600;
+}
+
+.hobby-card h4 {
+  font-size: 55px;
+  margin: 16px 0 0 15px;
+  font-size: 40px;
+  font-weight: 400;
+}

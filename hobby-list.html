@@ -5,12 +5,37 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="CSS/style.css" />
+    <!-- skal slettes når de kobles css-dokumemter -->
+    <link rel="stylesheet" href="CSS/hobby-list.css" />
     <title>Hobby liste</title>
   </head>
   <body class="hobby-list">
     <header></header>
-    <main></main>
+
+    <main>
+      <div class="breadcrumb">
+        <a href="kategori.html" class="kategori-html"><p>Kategori</p></a>
+        <p>/</p>
+        <p class="hobby-kategori"></p>
+      </div>
+      <div class="card-grid">
+        <template id="hobby-card-template">
+          <article class="hobby-card">
+            <a href=""><h2>Strik</h2></a>
+            <a href="">
+              <img src="#" alt="Illustration" />
+            </a>
+            <div class="kategori-flex">
+              <h3>Kategori:</h3>
+              <h4></h4>
+            </div>
+          </article>
+        </template>
+      </div>
+    </main>
+
     <footer></footer>
-    <script src="JS/fetch.js"></script>
+    <!-- <script src="JS/fetch.js"></script> -->
+    <script src="JS/hobby-list.js"></script>
   </body>
 </html>
