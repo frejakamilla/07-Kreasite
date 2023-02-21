@@ -1,0 +1,100 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.main-nav {
+  background-color: #f3e2df;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  position: relative;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-item {
+  display: felx;
+  font-family: Quicksand;
+  font-weight: 600;
+  font-size: 25px;
+  color: black;
+}
+.nav-link {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-size: 25px;
+  color: black;
+  text-decoration: none;
+  margin: 30px;
+  display: block;
+}
+.nav-item:hover .nav-link {
+  color: #859986;
+}
+/* ------------- Logo ---------------- */
+.logo {
+  display: flex;
+  padding: 0 30px;
+}
+.logo p {
+  font-family: Bebas Neue;
+  font-size: 60px;
+}
+.logo :nth-child(1) {
+  color: #95aa99;
+}
+.logo :nth-child(2) {
+  color: #859986;
+}
+/* ------------- Dropdown menu ---------------- */
+.dropdown-menu {
+  display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: contents;
+
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  right: 0;
+  background-color: white;
+  border: 1px solid #f3e2df;
+  padding: 0 0 10px 0;
+}
+.dropdown-list {
+  width: fit-content;
+}
+.nav-item:hover .dropdown-list {
+  display: block;
+  margin: 0.5em 1em 0;
+  font-size: 20px;
+}
+.dropdown-item {
+  list-style: circle;
+  display: inline-block;
+  display: flex;
+  position: relative;
+}
+.nav-item:hover .dropdown-item {
+  justify-self: center;
+}
+.dropdown-link {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 20px;
+  color: black;
+  text-decoration: none;
+}
+.dropdown-link:hover {
+  color: #859986;
+}
+
+@media (min-width: 938px) {
+  .nav-item:hover .dropdown-menu {
+    justify-content: space-around;
+  }
+}
