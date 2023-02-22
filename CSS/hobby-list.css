@@ -20,16 +20,26 @@
   font-family: quicksand;
   font-size: 20px;
   color: #707070;
-}
-
-.kategori-html {
   font-weight: 300;
 }
 
-.hobby-kategori {
-  font-weight: 500;
+.kategori-html .bread-kategori,
+.kategori-html .bread-hobby,
+.kategori-html .skraastreg1,
+.kategori-html .skraastreg2 {
+  display: none;
 }
 
+.hobby-list .bread-kategori {
+  font-weight: 500;
+}
+.hobby-list .bread-hobby,
+.hobby-list .skraastreg2 {
+  display: none;
+}
+.hobby .bread-hobby {
+  font-weight: 500;
+}
 /* ––––––––– Hobby Cards ––––––––- */
 .card-grid {
   display: grid;
