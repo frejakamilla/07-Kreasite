@@ -71,8 +71,15 @@
 .nav-item:hover .dropdown-list {
   display: block;
   margin: 0.5em 1em 0;
-  font-size: 20px;
 }
+
+.dropdown-list .overskrift {
+  font-size: 25px;
+  font-family: Quicksand;
+  font-weight: 500;
+  list-style: none;
+}
+
 .dropdown-item {
   list-style: circle;
   display: inline-block;
