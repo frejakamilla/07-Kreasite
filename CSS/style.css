@@ -1,4 +1,583 @@
-/* –––––––––––––––––––––––– Form –––––––––––––––––––––––– */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Farver */
+html {
+  --mørkeblå: #5d718a;
+  --grøn: #95aa99;
+  --gul: #e1a55d;
+  --lysgul: #e8af81;
+  --lyserød: #e6c5be;
+  --orange: #cf7042;
+  --lyseblå: #b4bfc5;
+  --nav_lyserød: #f3e2df;
+  --mørkgrå: #707070;
+}
+/* Fonte */
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonte/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonte/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand-medium";
+  src: url("../fonte/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "Quicksand-regular";
+  src: url("../fonte/Quicksand-Regular.ttf");
+}
+
+/* index
+ - Globalmenu 
+ - Footer
+ - Brødkurmmesti
+ - index.html
+ - kategori.html
+ - hobby-list.html
+ - hobby.html
+ */
+
+/* ––––––––––––––––––––– Globalmenu ––––––––––––––––––––– */
+
+.main-nav {
+  background-color: var(--nav_lyserød);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: fit-content;
+  position: relative;
+}
+.nav-list {
+  list-style: none;
+  display: flex;
+}
+.nav-item {
+  display: felx;
+  font-family: Quicksand;
+  font-weight: 600;
+  font-size: 25px;
+  color: var(--mørkgrå);
+}
+.nav-link {
+  font-family: Quicksand;
+  font-weight: 500;
+  font-size: 25px;
+  color: var(--mørkgrå);
+  text-decoration: none;
+  margin: 30px;
+  display: block;
+}
+.nav-item:hover .nav-link {
+  color: var(--lysgul);
+}
+/* ------------- Logo ---------------- */
+.logo a {
+  display: flex;
+  padding: 0 30px;
+}
+.logo a:hover p {
+  color: var(--lysgul);
+}
+.logo p {
+  font-family: Bebas Neue;
+  font-size: 60px;
+}
+.logo :nth-child(1) {
+  color: var(--grøn);
+}
+.logo :nth-child(2) {
+  color: #859986;
+}
+/* ------------- Dropdown menu ---------------- */
+.dropdown-menu {
+  display: none;
+}
+
+.nav-item:hover .dropdown-menu {
+  display: contents;
+
+  position: absolute;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100vw;
+  right: 0;
+  background-color: white;
+  border: 1px solid var(--nav_lyserød);
+  padding: 0 0 10px 0;
+}
+.dropdown-list {
+  width: fit-content;
+}
+.nav-item:hover .dropdown-list {
+  display: block;
+  margin: 0.5em 1em 0;
+}
+
+.dropdown-list .overskrift {
+  font-size: 25px;
+  font-family: Quicksand;
+  font-weight: 500;
+  list-style: none;
+}
+
+.dropdown-item {
+  list-style: circle;
+  display: inline-block;
+  display: flex;
+  position: relative;
+}
+.nav-item:hover .dropdown-item {
+  justify-self: center;
+}
+.dropdown-link {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 20px;
+  color: var(--mørkgrå);
+  text-decoration: none;
+}
+.dropdown-link:hover {
+  color: var(--lysgul);
+}
+
+@media (min-width: 938px) {
+  .nav-item:hover .dropdown-menu {
+    justify-content: space-around;
+  }
+}
+
+/* ––––––––––––––––––––––– Footer ––––––––––––––––––––––– */
+.footer {
+  width: 100%;
+  background-color: var(--nav_lyserød);
+  display: flex;
+  justify-content: space-between;
+  margin: 18px 0 0 0;
+  padding-bottom: 18px;
+}
+
+.h2_footer {
+  font-size: 18px;
+  margin-top: 40px;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-family: "Quicksand-medium";
+  text-align: center;
+  color: var(--mørkgrå);
+}
+
+form {
+  padding: 4px;
+  border-radius: 5px;
+  padding-left: 90px;
+  padding-right: 90px;
+  font-size: 12px;
+}
+
+label,
+input,
+textarea,
+select,
+.button_footer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5px;
+  font-family: "Quicksand";
+}
+
+.footer input {
+  background-color: white;
+  border-radius: 25px;
+  border-style: solid;
+  border-color: white;
+}
+
+button {
+  background-color: var(--lyserød);
+  font-family: "OpenSans";
+  text-align: center;
+  margin-top: 20px;
+  width: 100%;
+  border-radius: 27px;
+  font-size: 12px;
+  border-style: solid;
+  border-color: var(--lyserød);
+  color: rgb(0, 0, 0);
+}
+
+.footer_logo {
+  width: 15%;
+  margin-top: 40px;
+  margin-right: 60px;
+}
+
+.icons_footer {
+  width: 38%;
+  margin-top: 90px;
+  margin-left: 60px;
+  /* margin-bottom: 90px; */
+}
+
+/* Fonte */
+@font-face {
+  font-family: "Bebas";
+  src: url("../fonte/BebasNeue-Regular.ttf");
+}
+@font-face {
+  font-family: "OpenSans";
+  src: url("../fonte/OpenSans-Light.ttf");
+}
+@font-face {
+  font-family: "Quicksand-medium";
+  src: url("../fonte/Quicksand-Medium.ttf");
+}
+@font-face {
+  font-family: "Quicksand-regular";
+  src: url("../fonte/Quicksand-Regular.ttf");
+}
+
+@media (max-width: 600px) {
+  .footer {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+  .footer_logo {
+    margin-left: 84px;
+    width: 98px;
+  }
+
+  .h2_footer {
+    font-size: 16px;
+    margin-top: 25px;
+  }
+}
+
+/* ––––––––––––––––––– Brødkrummesti ––––––––––––––––––– */
+.breadcrumb {
+  display: flex;
+  margin-left: 55px;
+}
+
+.breadcrumb a {
+  text-decoration: none;
+  color: var(--mørkgrå);
+}
+.breadcrumb p {
+  margin: 10px 10px 10px 0;
+  font-family: quicksand;
+  font-size: 20px;
+  color: var(--mørkgrå);
+  font-weight: 300;
+}
+
+.kategori-html .kategori-link p {
+  font-weight: 500;
+}
+
+.kategori-html .bread-kategori,
+.kategori-html .bread-hobby,
+.kategori-html .skraastreg1,
+.kategori-html .skraastreg2 {
+  display: none;
+}
+
+.hobby-list .bread-kategori {
+  font-weight: 500;
+}
+.hobby-list .bread-hobby,
+.hobby-list .skraastreg2 {
+  display: none;
+}
+.hobby .bread-hobby {
+  font-weight: 500;
+}
+
+/* ––––––––––––––––––––– Index.html ––––––––––––––––––––– */
+
+.forside-display {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 90vh;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+}
+.forside-display .logo {
+  max-width: 50vw;
+  min-width: 300px;
+}
+
+.forside-display a {
+  text-decoration: none;
+}
+
+.forside-display h2 {
+  font-size: 20px;
+  letter-spacing: 4px;
+  word-spacing: 3px;
+  margin: 25px 0 10vh;
+  color: var(--mørkgrå);
+}
+
+.forside-display a:hover h2 {
+  font-weight: 500;
+  color: var(--orange);
+}
+@keyframes mover {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-25px);
+  }
+}
+.mover {
+  max-width: 10vw;
+}
+img.mover {
+  transform-origin: 50% 50%;
+  animation: mover 1s infinite alternate;
+  position: absolute;
+  top: 90%;
+}
+
+/* ------- section - kategorier ------- */
+
+.section-kategorier {
+  background-color: var(--nav_lyserød);
+  width: 100vw;
+  height: 20vh;
+  padding: 5vh 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-kategorier a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+
+  text-decoration: none;
+  font-family: Bebas Neue;
+  font-size: 25px;
+  font-weight: 600;
+  color: white;
+}
+
+.section-kategorier a:nth-child(1) {
+  background-color: var(--mørkeblå);
+}
+.section-kategorier a:nth-child(2) {
+  background-color: var(--grøn);
+}
+.section-kategorier a:nth-child(3) {
+  background-color: var(--gul);
+}
+.section-kategorier a:nth-child(4) {
+  background-color: var(--lyserød);
+}
+.section-kategorier a:nth-child(5) {
+  background-color: var(--orange);
+}
+.section-kategorier a:nth-child(6) {
+  background-color: var(--lyseblå);
+}
+.section-kategorier a:nth-child(7) {
+  background-color: var(--grøn);
+}
+/* - section - vores favoritter -- */
+
+.section-favoritter {
+  display: flex;
+  justify-content: center;
+  padding: 5vh 0;
+}
+.vores-favoritter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vores-favoritter h3 {
+  grid-column: span 3;
+  justify-self: center;
+
+  font-size: 20px;
+  letter-spacing: 4px;
+  word-spacing: 3px;
+  color: var(--mørkgrå);
+}
+
+.favorit-hobby-box {
+  width: fit-content;
+  height: fit-content;
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: solid var(--nav_lyserød) 1px;
+  border-radius: 1em;
+}
+
+.favorit-hobby-box img {
+  width: 20vw;
+  margin-bottom: 1em;
+}
+
+.favorit-hobby-box h4 {
+  text-decoration: none;
+  font-family: Quicksand;
+  font-size: 20px;
+  color: var(--mørkgrå);
+}
+.favorit-hobby-box:hover {
+  background-color: var(--nav_lyserød);
+}
+/* –––––– media queries –––––– */
+@media (min-width: 650px) {
+  .forside-display h2,
+  .vores-favoritter h3 {
+    font-size: 20px;
+    letter-spacing: 5px;
+    word-spacing: 6px;
+  }
+}
+@media (min-width: 900px) {
+  .forside-display h2,
+  .vores-favoritter h3 {
+    font-size: 30px;
+  }
+}
+
+/* –––––––––––––––––––– Kategori.html ––––––––––––––––––– */
+.kategoriliste {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1em;
+  min-height: 90vh;
+  padding: 2vw 5vw;
+}
+.kategoriliste a {
+  text-decoration: none;
+  padding: 2em;
+  cursor: pointer;
+  border-radius: 12px;
+  text-align: center;
+  color: white;
+  /* background-color: var(--mørkeblå); */
+  font-family: "Bebas";
+  font-size: 40px;
+}
+.kategoriliste a:nth-child(1) {
+  background-color: var(--mørkeblå);
+}
+.kategoriliste a:nth-child(2) {
+  background-color: var(--grøn);
+}
+.kategoriliste a:nth-child(3) {
+  background-color: var(--gul);
+}
+.kategoriliste a:nth-child(4) {
+  background-color: var(--lyserød);
+}
+.kategoriliste a:nth-child(5) {
+  background-color: var(--orange);
+}
+.kategoriliste a:nth-child(6) {
+  background-color: var(--lyseblå);
+}
+.kategoriliste a:nth-child(7) {
+  background-color: var(--grøn);
+}
+@media only screen and (max-width: 768px) {
+  .kategoriliste {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1em;
+  }
+}
+
+@media only screen and (max-width: 520px) {
+  .kategoriliste {
+    grid-template-columns: 1fr;
+    gap: 1em;
+  }
+}
+/* ––––––––––––––––––– Hobby-list.html –––––––––––––––––– */
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 300px));
+  gap: 30px;
+  margin: 0 55px;
+}
+.hobby-card {
+  width: 300px;
+  height: fit-content;
+  border: solid var(--nav_lyserød) 1px;
+  border-radius: 25px;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.hobby-card a {
+  text-decoration: none;
+  align-self: center;
+}
+
+.hobby-card h2,
+.hobby-card h3,
+.hobby-card h4 {
+  color: var(--mørkgrå);
+  font-family: Quicksand;
+}
+
+.hobby-card h2 {
+  font-size: 40px;
+  font-weight: 500;
+  margin: 16px 16px 0 16px;
+}
+
+.hobby-card img {
+  align-self: center;
+  aspect-ratio: 380/425;
+  width: 250px;
+}
+
+.kategori-flex {
+  display: flex;
+  margin: 0 1em 1em 1em;
+}
+
+.hobby-card h3 {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.hobby-card h4 {
+  font-size: 55px;
+  margin: 0 0 0 15px;
+  font-size: 30px;
+  font-weight: 400;
+}
+/* ––––––––––––––––––––– Hobby.html ––––––––––––––––––––– */
+
+/* ––– Form ––– */
 .send-liste {
   width: fit-content;
   margin: 1rem;
@@ -24,7 +603,7 @@
 .form-felt label {
   font-weight: 600;
 }
-.form-felt input {
+.hobby.html .form-felt input {
   width: 100%;
   padding: 0.3rem;
   background-color: #efefef;
@@ -40,7 +619,7 @@
 .send-knap input {
   width: 90%;
   padding: 1rem 0.5rem;
-  background-color: #e8af81;
+  background-color: var(--lysgul);
   border-radius: 2rem;
   border: none;
   font-weight: 600;
