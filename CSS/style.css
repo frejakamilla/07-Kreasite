@@ -52,10 +52,9 @@ html {
 .main-nav {
   background-color: var(--nav_lyserød);
   display: flex;
+  flex-direction: column;
   align-items: center;
-  justify-content: space-between;
   height: fit-content;
-  position: relative;
 }
 .nav-list {
   list-style: none;
@@ -74,11 +73,22 @@ html {
   font-size: 25px;
   color: var(--mørkgrå);
   text-decoration: none;
-  margin: 30px;
+  margin: 0 0 30px;
   display: block;
 }
 .nav-item:hover .nav-link {
   color: var(--lysgul);
+}
+
+@media (min-width: 600px) {
+  .main-nav {
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+  }
+  .nav-link {
+    margin: 30px;
+  }
 }
 /* ------------- Logo ---------------- */
 .logo a {
@@ -102,54 +112,54 @@ html {
 .dropdown-menu {
   display: none;
 }
+@media (min-width: 600px) {
+  .nav-item:hover .dropdown-menu {
+    display: contents;
 
-.nav-item:hover .dropdown-menu {
-  display: contents;
+    position: absolute;
+    display: flex;
+    flex-wrap: wrap;
+    width: 100vw;
+    right: 0;
+    background-color: white;
+    border: 1px solid var(--nav_lyserød);
+    padding: 0 0 10px 0;
+  }
+  .dropdown-list {
+    width: fit-content;
+  }
+  .nav-item:hover .dropdown-list {
+    display: block;
+    margin: 0.5em 1em 0;
+  }
 
-  position: absolute;
-  display: flex;
-  flex-wrap: wrap;
-  width: 100vw;
-  right: 0;
-  background-color: white;
-  border: 1px solid var(--nav_lyserød);
-  padding: 0 0 10px 0;
-}
-.dropdown-list {
-  width: fit-content;
-}
-.nav-item:hover .dropdown-list {
-  display: block;
-  margin: 0.5em 1em 0;
-}
+  .dropdown-list .overskrift {
+    font-size: 25px;
+    font-family: Quicksand;
+    font-weight: 500;
+    list-style: none;
+  }
 
-.dropdown-list .overskrift {
-  font-size: 25px;
-  font-family: Quicksand;
-  font-weight: 500;
-  list-style: none;
+  .dropdown-item {
+    list-style: circle;
+    display: inline-block;
+    display: flex;
+    position: relative;
+  }
+  .nav-item:hover .dropdown-item {
+    justify-self: center;
+  }
+  .dropdown-link {
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 20px;
+    color: var(--mørkgrå);
+    text-decoration: none;
+  }
+  .dropdown-link:hover {
+    color: var(--lysgul);
+  }
 }
-
-.dropdown-item {
-  list-style: circle;
-  display: inline-block;
-  display: flex;
-  position: relative;
-}
-.nav-item:hover .dropdown-item {
-  justify-self: center;
-}
-.dropdown-link {
-  font-family: Quicksand;
-  font-weight: 400;
-  font-size: 20px;
-  color: var(--mørkgrå);
-  text-decoration: none;
-}
-.dropdown-link:hover {
-  color: var(--lysgul);
-}
-
 @media (min-width: 938px) {
   .nav-item:hover .dropdown-menu {
     justify-content: space-around;
@@ -161,14 +171,13 @@ html {
   width: 100%;
   background-color: var(--nav_lyserød);
   display: flex;
-  justify-content: space-between;
-  margin: 18px 0 0 0;
-  padding-bottom: 18px;
+  flex-direction: column;
+  align-items: center;
 }
 
 .h2_footer {
-  font-size: 18px;
-  margin-top: 40px;
+  font-size: 16px;
+  margin-top: 25px;
   padding-left: 90px;
   padding-right: 90px;
   font-family: Quicksand;
@@ -224,9 +233,9 @@ html {
 }
 
 .footer_logo {
-  width: 15%;
-  margin-top: 40px;
-  margin-right: 60px;
+  min-width: 98px;
+  max-width: 15vw;
+  margin: 10px 0;
 }
 
 .icons_footer {
@@ -236,19 +245,21 @@ html {
   /* margin-bottom: 90px; */
 }
 
-@media (max-width: 600px) {
+@media (min-width: 600px) {
   .footer {
-    display: grid;
-    grid-template-columns: 1fr;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 18px 0 0 0;
+    padding-bottom: 18px;
   }
+
   .footer_logo {
-    margin-left: 84px;
-    width: 98px;
+    margin-right: 60px;
   }
 
   .h2_footer {
-    font-size: 16px;
-    margin-top: 25px;
+    font-size: 18px;
+    margin-top: 40px;
   }
 }
 
@@ -347,10 +358,12 @@ img.mover {
 .section-kategorier {
   background-color: var(--nav_lyserød);
   width: 100vw;
-  height: 20vh;
-  padding: 5vh 0;
+  min-height: 20vh;
+  max-height: fit-content;
+  padding: 2vh 0;
 
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
   align-items: center;
 }
@@ -358,15 +371,20 @@ img.mover {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 100px;
+  width: 250px;
+  height: 50px;
   border-radius: 50px;
-
   text-decoration: none;
   font-family: Bebas Neue;
   font-size: 25px;
   font-weight: 600;
   color: white;
+  margin: 5px;
+}
+
+.section-kategorier a:hover {
+  opacity: 80%;
+  transform: scale(90%);
 }
 
 .section-kategorier a:nth-child(1) {
@@ -390,8 +408,32 @@ img.mover {
 .section-kategorier a:nth-child(7) {
   background-color: var(--grøn);
 }
-/* - section - vores favoritter -- */
 
+@media (min-width: 700px) {
+  .section-kategorier {
+    justify-content: space-around;
+    align-items: center;
+    padding: 5vh 0;
+  }
+
+  .section-kategorier a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+
+    text-decoration: none;
+    font-family: Bebas Neue;
+    font-size: 25px;
+    font-weight: 600;
+    color: white;
+
+    margin: 0;
+  }
+}
+/* - section - vores favoritter -- */
 .section-favoritter {
   display: flex;
   justify-content: center;
@@ -433,7 +475,7 @@ img.mover {
 .favorit-hobby-box h4 {
   text-decoration: none;
   font-family: Quicksand;
-  font-size: 20px;
+  font-size: 16px;
   color: var(--mørkgrå);
 }
 .favorit-hobby-box:hover {
@@ -446,6 +488,9 @@ img.mover {
     font-size: 20px;
     letter-spacing: 5px;
     word-spacing: 6px;
+  }
+  .favorit-hobby-box h4 {
+    font-size: 20px;
   }
 }
 @media (min-width: 900px) {
