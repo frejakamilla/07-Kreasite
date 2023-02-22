@@ -3,11 +3,13 @@
   padding: 0;
 }
 
+/* ––––––––––––––––––– forside display –––––––––––––––––––––  */
+
 .forside-display {
   display: flex;
   flex-direction: column;
   background-color: white;
-  height: 100vh;
+  height: 90vh;
   width: 100vw;
   justify-content: center;
   align-items: center;
@@ -15,6 +17,10 @@
 .forside-display .logo {
   max-width: 50vw;
   min-width: 300px;
+}
+
+.forside-display a {
+  text-decoration: none;
 }
 
 .forside-display h2 {
@@ -25,6 +31,10 @@
   color: #707070;
 }
 
+.forside-display a:hover h2 {
+  font-weight: 500;
+  color: #cf7042;
+}
 @keyframes mover {
   0% {
     transform: translateY(0);
@@ -41,6 +51,101 @@ img.mover {
   animation: mover 1s infinite alternate;
   position: absolute;
   top: 90%;
+}
+
+/* ------- section - kategorier ------- */
+
+.section-kategorier {
+  background-color: #f3e2df;
+  width: 100vw;
+  height: 20vh;
+  padding: 5vh 0;
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+.section-kategorier a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  border-radius: 50px;
+
+  text-decoration: none;
+  font-family: Bebas Neue;
+  font-size: 30px;
+  font-weight: 600;
+  color: white;
+}
+
+.section-kategorier a:nth-child(1) {
+  background-color: #5d718a;
+}
+.section-kategorier a:nth-child(2) {
+  background-color: #95aa99;
+}
+.section-kategorier a:nth-child(3) {
+  background-color: #e1a55d;
+}
+.section-kategorier a:nth-child(4) {
+  background-color: #e6c5be;
+}
+.section-kategorier a:nth-child(5) {
+  background-color: #cf7042;
+}
+.section-kategorier a:nth-child(6) {
+  background-color: #b4bfc5;
+}
+.section-kategorier a:nth-child(7) {
+  background-color: #95aa99;
+}
+/* ------- section - vores favoritter ------- */
+
+.section-favoritter {
+  display: flex;
+  justify-content: center;
+  padding: 5vh 0;
+}
+.vores-favoritter {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.vores-favoritter h3 {
+  grid-column: span 3;
+  justify-self: center;
+
+  font-size: 16px;
+  letter-spacing: 4px;
+  word-spacing: 3px;
+  color: #707070;
+}
+
+.favorit-hobby-box {
+  width: fit-content;
+  height: fit-content;
+  margin: 1em;
+  padding: 1em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border: solid #f3e2df 1px;
+  border-radius: 1em;
+}
+
+.favorit-hobby-box img {
+  width: 20vw;
+  margin-bottom: 1em;
+}
+
+.favorit-hobby-box h4 {
+  text-decoration: none;
+}
+.favorit-hobby-box:hover {
+  background-color: #f3e2df;
 }
 /* ––––––––––––––––––– media queries ––––––––––––––––––––– */
 @media (min-width: 650px) {
