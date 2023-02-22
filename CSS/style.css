@@ -171,12 +171,13 @@ html {
   margin-top: 40px;
   padding-left: 90px;
   padding-right: 90px;
-  font-family: "Quicksand-medium";
+  font-family: Quicksand;
+  font-weight: 600;
   text-align: center;
   color: var(--mørkgrå);
 }
 
-form {
+.footer form {
   padding: 4px;
   border-radius: 5px;
   padding-left: 90px;
@@ -184,15 +185,21 @@ form {
   font-size: 12px;
 }
 
-label,
-input,
-textarea,
-select,
+.footer label,
+.footer input,
+.footer textarea,
+.footer select,
 .button_footer {
   display: flex;
   flex-direction: column;
   margin-top: 5px;
   font-family: "Quicksand";
+}
+
+.footer .form-felt label {
+  font-weight: 500;
+  font-family: Quicksand;
+  color: var(--mørkgrå);
 }
 
 .footer input {
@@ -202,17 +209,18 @@ select,
   border-color: white;
 }
 
-button {
+.footer button {
   background-color: var(--lyserød);
-  font-family: "OpenSans";
+  font-family: Quicksand;
   text-align: center;
   margin-top: 20px;
   width: 100%;
   border-radius: 27px;
   font-size: 12px;
+  font-weight: 500;
   border-style: solid;
   border-color: var(--lyserød);
-  color: rgb(0, 0, 0);
+  color: var(--mørkgrå);
 }
 
 .footer_logo {
@@ -226,24 +234,6 @@ button {
   margin-top: 90px;
   margin-left: 60px;
   /* margin-bottom: 90px; */
-}
-
-/* Fonte */
-@font-face {
-  font-family: "Bebas";
-  src: url("../fonte/BebasNeue-Regular.ttf");
-}
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonte/OpenSans-Light.ttf");
-}
-@font-face {
-  font-family: "Quicksand-medium";
-  src: url("../fonte/Quicksand-Medium.ttf");
-}
-@font-face {
-  font-family: "Quicksand-regular";
-  src: url("../fonte/Quicksand-Regular.ttf");
 }
 
 @media (max-width: 600px) {
