@@ -21,13 +21,13 @@ async function hentData() {
 
 hentData();
 
-document.querySelector(".breadcrumb .aktiv-kategori").textContent = hobby.kategori;
-
 function visHobby(hobby) {
   console.log(hobby);
   const template = document.querySelector("#hobby-card-template").content;
   const klon = template.cloneNode(true);
   //6. skifte data
+  document.querySelector(".breadcrumb .aktiv-kategori").textContent = hobby.kategori;
+
   klon.querySelector("a").href = "hobby.html?id=" + hobby._id;
 
   klon.querySelector("h2").textContent = hobby.navn;
