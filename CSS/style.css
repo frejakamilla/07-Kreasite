@@ -310,7 +310,11 @@ html {
 .forside-display {
   display: flex;
   flex-direction: column;
-  background-color: white;
+  background-image: url("../assets/forside-display.svg");
+  justify-self: center;
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover;
   height: 90vh;
   width: 100vw;
   justify-content: center;
