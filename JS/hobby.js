@@ -1,7 +1,8 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("id");
 const kat = urlParams.get("kat");
-const url = `https://omhyggeligt-4c12.restdb.io/rest/ny-database/${id}`;
+const url = `https://kreahobby-0fd9.restdb.io/rest/kreahobby/${id}`;
+// const url = `https://omhyggeligt-4c12.restdb.io/rest/ny-database/${id}`;
 
 document.querySelector(".breadcrumb .bread-kategori").textContent = kat;
 
@@ -10,8 +11,11 @@ console.log("visHobbySingleview");
 // Det hemmelige kodeord
 const options = {
   headers: {
-    "x-apikey": "63f6152e478852088da68558",
+    "x-apikey": "63ecb0af478852088da682ed",
   },
+  // headers: {
+  //   "x-apikey": "63f6152e478852088da68558",
+  // },
 };
 
 // fetch - Hente data

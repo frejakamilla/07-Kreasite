@@ -2,15 +2,19 @@ console.log("vi er i hobby-list.html");
 
 const urlParams = new URLSearchParams(window.location.search);
 const kat = urlParams.get("kat");
-const url = `https://omhyggeligt-4c12.restdb.io/rest/ny-database`;
+const url = `https://kreahobby-0fd9.restdb.io/rest/kreahobby`;
+// const url = `https://omhyggeligt-4c12.restdb.io/rest/ny-database`;
 
 // vælg overskrifter og brødkrummesti
 document.querySelector(".breadcrumb .bread-kategori").textContent = kat;
 
 const options = {
   headers: {
-    "x-apikey": "63f6152e478852088da68558",
+    "x-apikey": "63ecb0af478852088da682ed",
   },
+  // headers: {
+  //   "x-apikey": "63f6152e478852088da68558",
+  // },
 };
 
 async function hentData() {
