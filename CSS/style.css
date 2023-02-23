@@ -26,10 +26,7 @@ html {
   font-family: "Bebas";
   src: url("../fonte/BebasNeue-Regular.ttf");
 }
-@font-face {
-  font-family: "OpenSans";
-  src: url("../fonte/OpenSans-Light.ttf");
-}
+
 @font-face {
   font-family: "Quicksand-medium";
   src: url("../fonte/Quicksand-Medium.ttf");
@@ -38,16 +35,6 @@ html {
   font-family: "Quicksand-regular";
   src: url("../fonte/Quicksand-Regular.ttf");
 }
-
-/* index
- - Globalmenu 
- - Footer
- - Brødkurmmesti
- - index.html
- - kategori.html
- - hobby-list.html
- - hobby.html
- */
 
 /* ––––––––––––––––––––– Globalmenu ––––––––––––––––––––– */
 
@@ -321,8 +308,8 @@ html {
   flex-direction: column;
   background-image: url("../assets/forside-display.svg");
   justify-self: center;
-  background-position: center; /* Center the image */
-  background-repeat: no-repeat; /* Do not repeat the image */
+  background-position: center;
+  background-repeat: no-repeat;
   background-size: cover;
   height: 90vh;
   width: 100vw;
