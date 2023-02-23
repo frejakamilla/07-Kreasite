@@ -5,6 +5,9 @@ const url = `https://kreahobby-0fd9.restdb.io/rest/kreahobby/${id}`;
 // const url = `https://omhyggeligt-4c12.restdb.io/rest/ny-database/${id}`;
 
 document.querySelector(".breadcrumb .bread-kategori").textContent = kat;
+document.querySelector(".breadcrumb .bread-kategori-link").href = "hobby-list.html?kat=" + kat;
+
+// klon.querySelector("#card-link").href = "hobby.html?id=" + hobby._id + "&kat=" + hobby.kategori;
 
 console.log("visHobbySingleview");
 
