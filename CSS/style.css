@@ -134,7 +134,16 @@ html {
     display: block;
     margin: 0.5em 1em 0;
   }
+  .dropdown-list a:visited,
+  .dropdown-list a:active,
+  .dropdown-list a:link {
+    text-decoration: none;
+    color: var(--mørkgrå);
+  }
 
+  .dropdown-list a:hover {
+    color: var(--lysgul);
+  }
   .dropdown-list .overskrift {
     font-size: 25px;
     font-family: Quicksand;
