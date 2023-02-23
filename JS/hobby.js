@@ -1,7 +1,9 @@
 const urlParams = new URLSearchParams(window.location.search);
-const id = urlParams.get("_id");
+const id = urlParams.get("id");
 const kat = urlParams.get("kat");
-const url = "https://omhyggeligt-4c12.restdb.io/rest/ny-database/${id}";
+const url = `https://omhyggeligt-4c12.restdb.io/rest/ny-database/${id}`;
+
+document.querySelector(".breadcrumb .bread-kategori").textContent = kat;
 
 console.log("visHobbySingleview");
 
@@ -23,7 +25,8 @@ hentData();
 
 // visdata
 function vis(hobby) {
-  console.log(hobby);
+  console.log("hobby");
+  document.querySelector(".breadcrumb .bread-hobby").textContent = hobby.navn;
   document.querySelector(".billedeurl img").src = "assets/" + hobby.billede;
   document.querySelector(".text h2").textContent = hobby.navn;
   document.querySelector(".text p").textContent = hobby.beskrivelse;
