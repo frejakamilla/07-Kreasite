@@ -1,14 +1,14 @@
 const urlParams = new URLSearchParams(window.location.search);
 const id = urlParams.get("_id");
 const kat = urlParams.get("kat");
-const url = "https://kreahobby-0fd9.restdb.io/rest/kreahobby/${id}";
+const url = "https://omhyggeligt-4c12.restdb.io/rest/ny-database/${id}";
 
 console.log("visHobbySingleview");
 
 // Det hemmelige kodeord
 const options = {
   headers: {
-    "x-apikey": "63ecb0af478852088da682ed",
+    "x-apikey": "63f6152e478852088da68558",
   },
 };
 

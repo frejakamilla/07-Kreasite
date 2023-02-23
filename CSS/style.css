@@ -573,6 +573,10 @@ img.mover {
   flex-direction: column;
 }
 
+.hobby-card:hover {
+  background-color: var(--nav_lyserød);
+}
+
 .hobby-card a {
   text-decoration: none;
   align-self: center;
