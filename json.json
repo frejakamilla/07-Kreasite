@@ -1,0 +1,93 @@
+[
+  {
+    "_id": "63f60fe562144c6900025846",
+    "Navn": "Strik",
+    "Kategori": "Garn",
+    "Beskrivelse": "Ved strikning lænkes garnet med strikkepinde, så man feks. kan fremstille tøj og tæpper. Men kun fantasien sætter grænser for hvad du kan kreere når du først er kommet i gang med strikkeritet",
+    "Redskaber til at komme igang": "Et sæt stikkepinde og garn",
+    "Link til billederillustrationer": "strik.svg",
+    "navn": "Strik",
+    "kategori": "Garn",
+    "beskrivelse": "Ved strikning lænkes garnet med strikkepinde, så man feks. kan fremstille tøj og tæpper. Men kun fantasien sætter grænser for hvad du kan kreere når du først er kommet i gang med strikkeritet",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"strikkepinde\" name=\"redskaber\" value=\"strikkepinde\" />             <label for=”strikkepinde\">Strikkepinde</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"garn” name=\"redskaber\" value=\"garn\" />             <label for=\"garn\">Garn</label>           </div>",
+    "billede": "strik.svg"
+  },
+  {
+    "_id": "63f60fe562144c690002584a",
+    "Navn": "Smykker",
+    "Kategori": "Perler",
+    "Beskrivelse": "Hvad bedre end at smykke sig med egne personlige smykker. Med snor og perler kan du let lave alt fra armbånd, halskæder, ringe og ankelkæder.",
+    "Redskaber til at komme igang": "Perler, snor i tråd- eller nylonform og saks til at klippe snor.",
+    "Link til billederillustrationer": "smykker.svg",
+    "navn": "Smykker",
+    "kategori": "Perler",
+    "beskrivelse": "Hvad bedre end at smykke sig med egne personlige smykker. Med snor og perler kan du let lave alt fra armbånd, halskæder, ringe og ankelkæder.",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"perler\" name=\"redskaber\" value=\"perler\" />             <label for=\"perler\">Perler</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"snor\" name=\"redskaber\" value=\"snor\" />             <label for=\"snor\">Snor</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"saks\" name=\"redskaber\" value=\"saks\" />             <label for=\"saks\">Saks</label>           </div>",
+    "billede": "smykker.svg"
+  },
+  {
+    "_id": "63f60fe562144c690002584d",
+    "Navn": "Sy",
+    "Kategori": "Stof",
+    "Beskrivelse": "Ved syning kan du sammensætte tekstiler til f.eks. at fremstille tøj eller andre brugsgenstande til dit hjem. Du kan både sy i hånden eller symaskine til større projekter.",
+    "Redskaber til at komme igang": "Stof, nål og tråd. Symaskine til større projekter.",
+    "Link til billederillustrationer": "sy.svg",
+    "navn": "Sy",
+    "kategori": "Stof",
+    "beskrivelse": "Ved syning kan du sammensætte tekstiler til f.eks. at fremstille tøj eller andre brugsgenstande til dit hjem. Du kan både sy i hånden eller symaskine til større projekter.",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"traed_3\" name=\"redskaber\" value=\"traed\" />             <label for=\"traed_3\">Tråd</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"stof_3\" name=\"redskaber\" value=\"stof\" />             <label for=\"stof_3\">Stof</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"nål_2\" name=\"redskaber\" value=\"nål\" />             <label for=\"nål_2\">Nål</label>           </div>",
+    "billede": "sy.svg"
+  },
+  {
+    "_id": "63f60fe562144c6900025850",
+    "Navn": "Tegne",
+    "Kategori": "Blyant",
+    "Beskrivelse": "Tegning er en kreativ hobby du let kan tage med sig overalt, da du blot med en blyant og et stykke papir kan udfolde dig i timevis. Desuden er tegning en egenskab der kan bruges i massevis af andre kreative hobbier, da den visuelle forståelse udvikles. ",
+    "Redskaber til at komme igang": "Blyanter, papir, evt, hviskelæder",
+    "Link til billederillustrationer": "tegne.svg",
+    "navn": "Tegne",
+    "kategori": "Blyant",
+    "beskrivelse": "Tegning er en kreativ hobby du let kan tage med sig overalt, da du blot med en blyant og et stykke papir kan udfolde dig i timevis. Desuden er tegning en egenskab der kan bruges i massevis af andre kreative hobbier, da den visuelle forståelse udvikles. ",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"papir\" name=\"redskaber\" value=\"papir\" />             <label for=\"papir\">Papir</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"blyant\" name=\"redskaber\" value=\"blyant\" />             <label for=\"blyant\">Blyant</label>           </div>",
+    "billede": "tegne.svg"
+  },
+  {
+    "_id": "63f60fe562144c6900025854",
+    "Navn": "Akryl",
+    "Kategori": "Pensel",
+    "Beskrivelse": "Synes du plastik er fantastisk, så er akrylmaleri måske noget for dig. Akrylmalingen kan du bruge, som den er eller blande med andre eller evt. vand for at få en fortyndet farve.",
+    "Redskaber til at komme igang": "Akrylmaling og pensler. Samt papir eller lærred. ",
+    "Link til billederillustrationer": "akryl.svg",
+    "navn": "Akryl",
+    "kategori": "Pensel",
+    "beskrivelse": "Synes du plastik er fantastisk, så er akrylmaleri måske noget for dig. Akrylmalingen kan du bruge, som den er eller blande med andre eller evt. vand for at få en fortyndet farve.",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"pensel_3\" name=\"redskaber\" value=\"pensel\" />             <label for=\"pensel_3\">Pensel</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"laered_2\" name=\"redskaber\" value=\"laered\" />             <label for=\"laered_2\">Læred</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"akrylmaling\" name=\"redskaber\" value=\"akrylmaling\" />             <label for=\"akrylmaling\">Akrylmaling</label>           </div>",
+    "billede": "akryl.svg"
+  },
+  {
+    "_id": "63f60fe562144c6900025857",
+    "Navn": "Origami",
+    "Kategori": "Papir",
+    "Beskrivelse": "Orgimani er en smuk papirskunstform der kun bruger et stykke papir og foldninger. Ikke noget med at klippe og klister. Men det er ikke just let, præcission kræves til de avancerede udgaver. ",
+    "Redskaber til at komme igang": "Papir og evt. saks til at tilpasse papirstørrelsen.",
+    "Link til billederillustrationer": "origami.svg",
+    "navn": "Origami",
+    "kategori": "Papir",
+    "beskrivelse": "Orgimani er en smuk papirskunstform der kun bruger et stykke papir og foldninger. Ikke noget med at klippe og klister. Men det er ikke just let, præcission kræves til de avancerede udgaver. ",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"papir_3\" name=\"redskaber\" value=\"papir\" />             <label for=”papir_3\">Papir</label>           </div>",
+    "billede": "origami.svg"
+  },
+  {
+    "_id": "63f60fe562144c6900025856",
+    "Navn": "Keramik",
+    "Kategori": "Ler",
+    "Beskrivelse": "Vil du skabe noget der kan holde en evighed eller mangler du blot en vase eller skål? Form ønskede genstand i ler og forbrænd. Hernæst kan du glasere, hvorefter det brændes igen. ",
+    "Redskaber til at komme igang": "Ler, glasur (alt efter smag, kan også undlades), samt keramikovn til at brænde",
+    "Link til billederillustrationer": "keramik.svg",
+    "navn": "Keramik",
+    "kategori": "Ler",
+    "beskrivelse": "Vil du skabe noget der kan holde en evighed eller mangler du blot en vase eller skål? Form ønskede genstand i ler og forbrænd. Hernæst kan du glasere, hvorefter det brændes igen. ",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"ler\" name=\"redskaber\" value=\"ler\" />             <label for=\"ler\">Ler</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"keramikovn\" name=\"redskaber\" value=\"keramikovn\" />             <label for=\"keramikovn\">Keramikovn</label>           </div>",
+    "billede": "keramik.svg"
+  }
+]
