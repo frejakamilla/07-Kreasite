@@ -50,7 +50,7 @@ html {
   display: flex;
 }
 .nav-item {
-  display: felx;
+  display: flex;
   font-family: Quicksand;
   font-weight: 600;
   font-size: 25px;
@@ -385,7 +385,7 @@ img.mover {
 
 .section-kategorier a:hover {
   opacity: 80%;
-  transform: scale(90%);
+  transform: scale(0.9);
 }
 
 .section-kategorier a:nth-child(1) {
