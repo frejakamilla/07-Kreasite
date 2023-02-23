@@ -523,9 +523,20 @@ img.mover {
 }
 
 /* –––––––––––––––––––– Kategori.html ––––––––––––––––––– */
+
+.kategori-html h1 {
+  font-family: Quicksand;
+  color: var(--mørkgrå);
+  font-size: 25px;
+
+  padding: 0 5vw;
+  margin: 1vh 0 0;
+  display: flex;
+  justify-content: center;
+}
 .kategoriliste {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   gap: 1em;
   min-height: 90vh;
   padding: 2vw 5vw;
@@ -562,17 +573,18 @@ img.mover {
 .kategoriliste a:nth-child(7) {
   background-color: var(--grøn);
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 520px) {
   .kategoriliste {
     grid-template-columns: repeat(2, 1fr);
-    gap: 1em;
   }
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (min-width: 768px) {
   .kategoriliste {
-    grid-template-columns: 1fr;
-    gap: 1em;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  .kategori-html h1 {
+    font-size: 30px;
   }
 }
 /* ––––––––––––––––––– Hobby-list.html –––––––––––––––––– */
