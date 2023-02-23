@@ -1,0 +1,146 @@
+[
+  {
+    "_id": "63efa8c862144c69000225d9",
+    "navn": "Papirblomster",
+    "beskrivelse": "Hvis du er træt af at blomster visner, så skab dine egne langvarige. Med for eksempel silkepapir og crepepapir kan du lave smukke blomster, der endda kan se realistiske ud efter øvelse. ",
+    "kategori": "Papir",
+    "billede": "papirblomster.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"papir_5\" name=\"redskaber\" value=\"papir\" />             <label for=”papir_5\">Papir</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"saks_2\" name=\"redskaber\" value=\"saks\" />             <label for=\"saks_2\">Saks</label>           </div>"
+  },
+  {
+    "_id": "63ed31c962144c690001fae8",
+    "navn": "Tufting",
+    "beskrivelse": "Tufting er en teknik der typisk bruges til at lave tæpper, hvor man skyder garn ind på et udspændt stykke stof og til slut limer bagsiden så trådene holdes fast.",
+    "kategori": "Garn",
+    "billede": "tufting.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"tufting_maskine\" name=\"redskaber\" value=\"tufting_maskine\" />             <label for=\"tufting_maskine\">Tufting maskine</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"garn_3\" name=\"redskaber\" value=\"garn\" />             <label for=\"garn_3\">Garn</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"lim\" name=\"redskaber\" value=\"lim\" />             <label for=\"lim\">Lim</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"tufting_laerred\" name=\"redskaber\" value=\"tufting_laerred\" />             <label for=\"tufting_laerred\">Tufting lærred</label>           </div>"
+  },
+  {
+    "_id": "63ed327a62144c690001faee",
+    "navn": "Perleplade",
+    "beskrivelse": "Perleplader er dagligdag i børnehaven. Men med lidt kreativitet, selv med et voksent sind, kan de runde plastikperler skabe smukke og personlige lærreder. ",
+    "kategori": "Perler",
+    "billede": "perleplade.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"hamaperler\" name=\"redskaber\" value=\"hamaperler\" />             <label for=\"hamaperler\">Hamaperler</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"perleplade\" name=\"redskaber\" value=\"perleplade\" />             <label for=\"perleplade\">Perleplade</label>           </div>"
+  },
+  {
+    "_id": "63eff11362144c6900022a96",
+    "navn": "Patchwork",
+    "billede": "patchwork.svg",
+    "beskrivelse": "Med patchwork kan du sammensætte forskellige stykker stof og derved danne et unikt stor stykke sammensat stof som du kan bruge til alt.",
+    "kategori": "Stof",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"traed_4\" name=\"redskaber\" value=\"traed\" />             <label for=\"traed_4\">Tråd</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"stof_4\" name=\"redskaber\" value=\"stof\" />             <label for=\"stof_4\">Stof</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"nål_3\" name=\"redskaber\" value=\"nål\" />             <label for=\"nål_3\">Nål</label>           </div>"
+  },
+  {
+    "_id": "63efa96462144c69000227ba",
+    "navn": "Akryl",
+    "beskrivelse": "Synes du plastik er fantastisk, så er akrylmaleri måske noget for dig. Akrylmalingen kan du bruge, som den er eller blande med andre eller evt. vand for at få en fortyndet farve.",
+    "kategori": "Pensel",
+    "billede": "akryl.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"pensel_3\" name=\"redskaber\" value=\"pensel\" />             <label for=\"pensel_3\">Pensel</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"laered_2\" name=\"redskaber\" value=\"laered\" />             <label for=\"laered_2\">Læred</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"akrylmaling\" name=\"redskaber\" value=\"akrylmaling\" />             <label for=\"akrylmaling\">Akrylmaling</label>           </div>"
+  },
+  {
+    "_id": "63efa93962144c69000227b8",
+    "navn": "Air Clay",
+    "beskrivelse": "Men Air Clay (selvhærdende ler) kan du forme små dekorative elementer som smykkeskåle, bordskånere eller figurer. Efter 1-2 dage har leret hærdet sig selv og du kan dekorere det med akrylmaling og lak. Du kan også eksperimentere med at blande ting i leret for at give det et nyt udtryk, prøv eksempelvis peber. ",
+    "kategori": "Ler",
+    "billede": "air_clay.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"selvhaerdende_ler\" name=\"redskaber\" value=\"selvhaerdende_ler\" />             <label for=\"selvhaerdende_ler\">Selvhærdende ler</label>           </div>"
+  },
+  {
+    "_id": "63efaa2262144c69000227c1",
+    "navn": "Akvarel",
+    "beskrivelse": "Akvarel er en simpel men stærk maleform, som på sin vis har sit eget liv, da vandet ikke kan kontroleres til mindste detalje. Giv derfor slip og lad akvarellen, vandet og penslen arbejde med dig. ",
+    "kategori": "Pensel",
+    "billede": "akvarel.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"pensel\" name=\"redskaber\" value=\"pensel\" />             <label for=\"pensel\">Pensel</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"papir_4\" name=\"redskaber\" value=\"papir\" />             <label for=”papir_4\">Papir</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"vand\" name=\"redskaber\" value=\"vand\" />             <label for=\"vand\">Vand</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"akvarelmaling\" name=\"redskaber\" value=\"akvarelmaling\" />             <label for=\"akvarelmaling\">Akvarelmaling</label>           </div>"
+  },
+  {
+    "_id": "63efa90962144c69000225db",
+    "navn": "Origami",
+    "beskrivelse": "Orgimani er en smuk papirskunstform der kun bruger et stykke papir og foldninger. Ikke noget med at klippe og klister. Men det er ikke just let, præcision kræves til de avancerede udgaver. ",
+    "kategori": "Papir",
+    "billede": "origami.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"papir_3\" name=\"redskaber\" value=\"papir\" />             <label for=”papir_3\">Papir</label>           </div>"
+  },
+  {
+    "_id": "63ecaf0762144c690001f219",
+    "navn": "Strik",
+    "beskrivelse": "Ved strikning lænkes garnet med strikkepinde, så man f.eks. kan fremstille tøj og tæpper, men kun fantasien sætter grænser for hvad du kan kreere når du først er kommet i gang med strikkeriet.",
+    "kategori": "Garn",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"strikkepinde\" name=\"redskaber\" value=\"strikkepinde\" />             <label for=”strikkepinde\">Strikkepinde</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"garn” name=\"redskaber\" value=\"garn\" />             <label for=\"garn\">Garn</label>           </div>",
+    "billede": "strik.svg"
+  },
+  {
+    "_id": "63efabae62144c69000227cc",
+    "navn": "Kvilte",
+    "beskrivelse": "Ved kviltning sys to stykke stof sammen med vat indimellem. Med syningen skabes dekorative mønstre. Du kan også skabe stofmalerier med kviltning som du kan hænge op og se på.",
+    "kategori": "Stof",
+    "billede": "kvilte.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"stof\" name=\"redskaber\" value=\"stof\" />             <label for=\"stof\">Stof</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"nål\" name=\"redskaber\" value=\"nål\" />             <label for=\"nål\">Nål</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"traed\" name=\"redskaber\" value=\"traed\" />             <label for=\"traed\">Tråd</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"vat\" name=\"redskaber\" value=\"vat\" />             <label for=\"vat\">Vat</label>           </div>"
+  },
+  {
+    "_id": "63ed323362144c690001faeb",
+    "navn": "Smykker",
+    "beskrivelse": "Hvad bedre end at smykke sig med egne personlige smykker. Med snor og perler kan du let lave alt fra armbånd, halskæder, ringe og ankelkæder.",
+    "kategori": "Perler",
+    "billede": "smykker.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"perler\" name=\"redskaber\" value=\"perler\" />             <label for=\"perler\">Perler</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"snor\" name=\"redskaber\" value=\"snor\" />             <label for=\"snor\">Snor</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"saks\" name=\"redskaber\" value=\"saks\" />             <label for=\"saks\">Saks</label>           </div>"
+  },
+  {
+    "_id": "63efa9ed62144c69000227be",
+    "navn": "Olie",
+    "beskrivelse": "Oliemalerier er kendt for at hænge på museer med adelige og præster der ser dig i øjnene. Men med oliemaling får du netop lov til at arbejde længe og detaljeret samt kan terpentin gøre malingen frisk igen. ",
+    "kategori": "Pensel",
+    "billede": "olie.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"pensel_2\" name=\"redskaber\" value=\"pensel\" />             <label for=\"pensel_2\">Pensel</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"laered\" name=\"redskaber\" value=\"laered\" />             <label for=\"laered\">Læred</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"oliemaling\" name=\"redskaber\" value=\"oliemaling\" />             <label for=\"oliemaling\">Oliemaling</label>           </div>"
+  },
+  {
+    "_id": "63ed316b62144c690001fae6",
+    "navn": "Broderi",
+    "beskrivelse": "Har du noget tøj eller en taske der er for kedelig? Så er broderi lige noget for dig. Udsmyk tekstiler med nål og tråd og dan mønstre du selv kan vælge at tegne på og brodere efter.",
+    "kategori": "Garn Stof",
+    "billede": "broderi.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"broderinål\" name=\"redskaber\" value=\"broderinål\" />             <label for=\"broderinål\">Broderinål</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"traed_2\" name=\"redskaber\" value=\"traed\" />             <label for=\"traed_2\">Tråd</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"stof_2\" name=\"redskaber\" value=\"stof\" />             <label for=\"stof_2\">Stof</label>           </div>"
+  },
+  {
+    "_id": "63efa88a62144c69000225d7",
+    "navn": "Keramik",
+    "beskrivelse": "Vil du skabe noget der kan holde en evighed eller mangler du blot en vase eller skål? Form ønskede genstand i ler og forbrænd. Hernæst kan du glasere, hvorefter det brændes igen. ",
+    "kategori": "Ler",
+    "billede": "keramik.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"ler\" name=\"redskaber\" value=\"ler\" />             <label for=\"ler\">Ler</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"keramikovn\" name=\"redskaber\" value=\"keramikovn\" />             <label for=\"keramikovn\">Keramikovn</label>           </div>"
+  },
+  {
+    "_id": "63ed311662144c690001fae2",
+    "navn": "Hækle",
+    "beskrivelse": "Med hæklerig kan du skabe alverdens kreationer, alt fra tøj til tøjdyr til tøj til dit dyr og meget mere. Med hæklepinden skabes en lykke i garnet der kan bygges videre på.",
+    "kategori": "Garn",
+    "billede": "haekle.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"haeklepind\" name=\"redskaber\" value=\"hæklepind\" />             <label for=\"haeklepind\">Hæklepind</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"garn_2\" name=\"redskaber\" value=\"garn\" />             <label for=\"garn_2\">Garn</label>           </div>"
+  },
+  {
+    "_id": "63ed330662144c690001faf4",
+    "navn": "Sy",
+    "beskrivelse": "Ved syning kan du sammensætte tekstiler til f.eks. at fremstille tøj eller andre brugsgenstande til dit hjem. Du kan både sy i hånden eller symaskine til større projekter.",
+    "kategori": "Stof",
+    "billede": "sy.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"traed_3\" name=\"redskaber\" value=\"traed\" />             <label for=\"traed_3\">Tråd</label>           </div>  <div class=\"form-control\">             <input type=\"checkbox\" id=\"stof_3\" name=\"redskaber\" value=\"stof\" />             <label for=\"stof_3\">Stof</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"nål_2\" name=\"redskaber\" value=\"nål\" />             <label for=\"nål_2\">Nål</label>           </div>"
+  },
+  {
+    "_id": "63efaa4d62144c69000227c3",
+    "navn": "Farvelægge",
+    "beskrivelse": "Har du en blyantstegning der mangler et eller andet? Måske skal den farvelægges med farveblyanter. Er du helt tabt på farver så undersøg farvecirklen eller find farvesammensætninger i naturen.",
+    "kategori": "Blyant",
+    "billede": "farvelaegge.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"papir_2\" name=\"redskaber\" value=\"papir\" />             <label for=\"papir_2\">Papir</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"farveblyanter\" name=\"redskaber\" value=\"Farveblyanter\" />             <label for=\"farveblyanter\">farveblyanter</label>           </div>"
+  },
+  {
+    "_id": "63efaa7d62144c69000227c5",
+    "navn": "Tegne",
+    "beskrivelse": "Tegning er en kreativ hobby du let kan tage med sig overalt, da du blot med en blyant og et stykke papir kan udfolde dig i timevis. Desuden er tegning en egenskab der kan bruges i massevis af andre kreative hobbier, da den visuelle forståelse udvikles. ",
+    "kategori": "Blyant",
+    "billede": "tegne.svg",
+    "redskaber": "<div class=\"form-control\">             <input type=\"checkbox\" id=\"papir\" name=\"redskaber\" value=\"papir\" />             <label for=\"papir\">Papir</label>           </div> <div class=\"form-control\">             <input type=\"checkbox\" id=\"blyant\" name=\"redskaber\" value=\"blyant\" />             <label for=\"blyant\">Blyant</label>           </div>"
+  }
+]
