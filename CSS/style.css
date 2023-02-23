@@ -432,19 +432,8 @@ img.mover {
   }
 
   .section-kategorier a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
     width: 100px;
     height: 100px;
-    border-radius: 50px;
-
-    text-decoration: none;
-    font-family: Bebas Neue;
-    font-size: 25px;
-    font-weight: 600;
-    color: white;
-
     margin: 0;
   }
 }
