@@ -50,7 +50,6 @@ html {
   display: flex;
 }
 .nav-item {
-  display: flex;
   font-family: Quicksand;
   font-weight: 600;
   font-size: 25px;
